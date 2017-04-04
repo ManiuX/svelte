@@ -42,7 +42,7 @@ export default class Generator {
 		// Svelte's builtin `import { get, ... } from 'svelte/shared.js'`;
 		this.importedNames = new Set();
 		this._aliases = new Map();
-		this._usedNames = new Set();
+		this._usedNames = new Set( [ name ] );
 
 		this._callbacks = new Map();
 	}
